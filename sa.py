@@ -98,34 +98,6 @@ class nearestNeighborSearch:
             self.solution.append(next_node)
             current_node = next_node
         return self.solution
-    #
-    # def mvNNS(self):
-    #     num_of_vehicles = 2
-    #     self.N = len(self.coordinates)
-    #     free_nodes = []
-    #     dist = distances(self.coordinates)
-    #     dist.get_distance_matrix()
-    #     for i in range(self.N - 1):
-    #         free_nodes.append(i + 1)
-    #     current_node = 0
-    #     next_nodes = [0]
-    #     self.solution = [current_node]
-    #     for i in range(num_of_vehicles):
-    #         next_node = min(free_nodes, key=lambda x: dist.distance(current_node, x))
-    #         free_nodes.remove(next_node)
-    #         self.solution.append(next_node)
-    #         next_nodes.append(next_node)
-    #     next_nodes2 = next_nodes
-    #
-    #     while free_nodes:
-    #         next_nodes = next_nodes2
-    #         for i in range(len(next_nodes)):
-    #             next_node = min(free_nodes, key=lambda x: dist.distance(current_node, x))
-    #             free_nodes.remove(next_node)
-    #             self.solution.append(next_node)
-    #             next_nodes2[i] = next_node
-    #     return self.solution
-
 
 ''' simulated annealing to improve initial solution achieved from NNS,
 it iterates with declining temperature of annealing, escaping local optima and
