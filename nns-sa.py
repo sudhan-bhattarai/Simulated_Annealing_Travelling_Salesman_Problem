@@ -4,16 +4,14 @@ alpha = 0.9999        ## fraction by which temperature is reduced in each iterat
 minimum_temperature = 0.00001      ## threshold for stopping iterations once temperature is very low
 number_of_iterations = 10000
 number_of_nodes = 20 ## customer size (upto '400')
+'''
 
-"""
-"""
-"""
-"""
-"""
-"""
-"""
-"""
 
+
+
+
+
+'''
 import numpy as np
 import matplotlib.pyplot as plt
 import math
