@@ -6,4 +6,4 @@ This algorithm uses the nearest neighbor search algorithm to find an initial sol
 The initial solution is improved by using simulated annealing for a predefined number of iterations.
 In Simulated Annealing, if we keep waiting for better solution, the algorithm may stuck in a local minima.
 To get over local minima and locate global minima, bad solutions are also accepted in a conditional basis. 
-Condition used is a probability (normal distribution with mean = 50% and s.d = 1%) of finding better solutions in future.
+Condition used is a probability (normal distribution with mean = 50% and s.d = 5%) of finding better solutions in future.
