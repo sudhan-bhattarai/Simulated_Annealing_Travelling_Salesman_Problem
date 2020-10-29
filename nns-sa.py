@@ -148,7 +148,7 @@ class simulatedAnnealing:
                     # calculate probability if new solution is not better than previous
                     probability = np.exp(-delta / temp)
                     # keep solution if probability is better than a random probability between 0 and 1.
-                    if probability >= np.random.rand():
+                    if probability >= np.random.normal(0.50, 0.005):
                         current_tour = new_tour
                 if dist.tour_cost(current_tour) <= dist.tour_cost(self.best_tour):
                     self.best_tour = current_tour
